@@ -20,3 +20,22 @@ ScrollReveal().reveal(".header__links",{
     ...scrollRevealOption,
     delay: 1500,
 });
+
+
+const workout = document.querySelector(".workout__images");
+
+const workoutContent = Array.from(workout.children);
+
+workoutContent.forEach((item) => {
+  const duplicateNode = item.cloneNode(true);
+  duplicateNode.setAttribute("aria-hidden", true);
+  workout.appendChild(duplicateNode);
+});
+
+ScrollReveal().reveal(".workout__content .section__header", {
+  ...scrollRevealOption,
+});
+ScrollReveal().reveal(".workout__content .section__description", {
+  ...scrollRevealOption,
+  delay: 500,
+});
