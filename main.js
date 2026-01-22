@@ -60,4 +60,26 @@ ScrollReveal().reveal(".story__link", {
     delay: 2000,
 });
 
+ScrollReveal().reveal(".feature__grid li", {
+    ...scrollRevealOption,
+    interval: 500,
+});
+
+ScrollReveal().reveal(".download__image img",{
+    ...scrollRevealOption,
+});
+ScrollReveal().reveal(".membership__content .section__header",{
+    ...scrollRevealOption,
+});
+ScrollReveal().reveal(".membership__content .section__header",{
+    ...scrollRevealOption,
+    delay: 500,
+});
+ScrollReveal().reveal(".membership__btn",{
+    ...scrollRevealOption,
+    delay: 1000,
+});
+
+
+
 
