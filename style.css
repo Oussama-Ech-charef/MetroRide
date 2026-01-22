@@ -243,8 +243,17 @@ header::after {
   color: var(--primary-color);
 }
 
+.feature__grid {
+  margin-top: 4rem;
+  display: grid;
+  gap: 2rem;
+}
 
 
+  .feature__grid li{
+    display: flex;
+    gap: 1rem;
+  }
 
 
 
