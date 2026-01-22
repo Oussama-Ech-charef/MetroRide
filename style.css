@@ -256,6 +256,27 @@ header::after {
   }
 
 
+  .feature__grid span {
+    display: inline-flex;
+    justify-content: flex-end;
+    width: 8rem;
+    font-size: 4rem;
+    font-weight: 600;
+    line-height: 4rem;
+    color: var(--extra-light);
+  }
+
+  .feature__grid h4 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text-dark);
+  }
+
+
+  .feature__grid p {
+    color: var(--text-light);
+    line-height: 1.75rem;
+  }
 
 
 @media (width > 768px) {
@@ -325,6 +346,16 @@ header::after {
       text-align: left;
     }
 
+
+    .feature__grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0 2rem;
+    }
+
+    .feature__grid li:nth-child(2),
+    .feature__grid li:nth-child(4) {
+      margin-top: 3rem;
+    }
 
 
 
